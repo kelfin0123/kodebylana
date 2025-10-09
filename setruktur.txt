@@ -1,0 +1,62 @@
+kodebylana/
+│ │ ├─ Web/
+│ │ │ ├─ HomeController.php
+│ │ │ ├─ ProjectController.php
+│ │ │ ├─ ServiceController.php
+│ │ │ ├─ TestimonialController.php
+│ │ │ ├─ BlogController.php
+│ │ │ ├─ AboutController.php
+│ │ │ └─ ContactController.php
+│ │ └─ Admin/
+│ │ ├─ DashboardController.php
+│ │ ├─ AdminProjectController.php
+│ │ ├─ AdminServiceController.php
+│ │ ├─ AdminTestimonialController.php
+│ │ ├─ AdminBlogController.php
+│ │ ├─ AdminContactController.php
+│ │ └─ SettingController.php
+│ ├─ Mail/ContactSubmitted.php
+│ ├─ Models/{Project,Service,Testimonial,BlogPost,Contact,Setting}.php
+│ └─ Http/Requests/
+│ ├─ StoreContactRequest.php
+│ ├─ StoreProjectRequest.php
+│ ├─ UpdateProjectRequest.php
+│ ├─ StoreBlogRequest.php
+│ └─ UpdateBlogRequest.php
+├─ config/
+│ └─ filesystems.php (use public disk)
+├─ database/migrations/
+│ ├─ 2014_10_12_000000_create_users_table.php (from Breeze)
+│ ├─ 2025_01_01_000001_create_projects_table.php
+│ ├─ 2025_01_01_000002_create_services_table.php
+│ ├─ 2025_01_01_000003_create_testimonials_table.php
+│ ├─ 2025_01_01_000004_create_blog_posts_table.php
+│ ├─ 2025_01_01_000005_create_contacts_table.php
+│ └─ 2025_01_01_000006_create_settings_table.php
+├─ public/
+│ ├─ storage/ (symlink)
+│ └─ uploads/{projects,blog,testimonials}
+├─ resources/
+│ ├─ css/app.css (Tailwind)
+│ ├─ views/
+│ │ ├─ components/seo.blade.php
+│ │ ├─ layouts/app.blade.php
+│ │ ├─ home.blade.php
+│ │ ├─ projects/index.blade.php
+│ │ ├─ services/index.blade.php
+│ │ ├─ testimonials/index.blade.php
+│ │ ├─ blog/index.blade.php
+│ │ ├─ blog/show.blade.php
+│ │ ├─ about.blade.php
+│ │ ├─ contact.blade.php
+│ │ └─ admin/
+│ │ ├─ dashboard.blade.php
+│ │ ├─ projects/{index,create,edit}.blade.php
+│ │ ├─ services/{index,create,edit}.blade.php
+│ │ ├─ testimonials/{index,create,edit}.blade.php
+│ │ ├─ blog/{index,create,edit}.blade.php
+│ │ ├─ contacts/index.blade.php
+│ │ └─ settings/index.blade.php
+├─ routes/web.php
+├─ tailwind.config.js
+└─ vite.config.js
