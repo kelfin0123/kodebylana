@@ -9,6 +9,8 @@
 
 # Env & local config
 .env
+/public/storage
+/storage/*.key
 !.env.example
 .phpunit.result.cache
 
