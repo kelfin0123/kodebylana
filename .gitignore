@@ -7,9 +7,9 @@
 /storage/framework/sessions/
 /storage/framework/views/
 
-# Env & config lokal
+# Env & local config
 .env
-.env.*
+!.env.example
 .phpunit.result.cache
 
 # Node / Frontend
@@ -20,7 +20,7 @@
 /.vite
 vite.config.local.*
 
-# OS/editor
+# OS / Editor
 .DS_Store
 Thumbs.db
 .idea/
